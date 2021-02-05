@@ -1,0 +1,19 @@
+.apiFive-box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.apifive-mini-box{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size: 16px;
+        color: rgb(92, 92, 92);
+        text-transform: uppercase;
+    }
+}

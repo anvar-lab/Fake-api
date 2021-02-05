@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import React from "react";
+import { Switch, Route } from "react-router-dom";
+import ShopPage from "./page/shopPage";
+import BookPage from "./page/BookPage";
+import MoviePage from "./page/moviePage";
+import API4 from "./page/API4";
+import API5 from "./page/API5";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+        <Route exact path="/" component={ShopPage}/>
+        <Route exact path="/book" component={BookPage}/>
+        <Route exact path="/movie" component={MoviePage}/>
+        <Route exact path="/api4" component={API4}/>
+        <Route exact path="/api5" component={API5}/>
+      </Switch>
     </div>
   );
 }

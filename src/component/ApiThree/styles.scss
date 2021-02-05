@@ -1,0 +1,29 @@
+.apiThee-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.apithree-mini-box{
+    width: 45%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(0, 0, 0);
+    h1{
+        font-size: 16px;
+        color: rgb(128, 125, 125);
+    }
+    img {
+        width: 50%;
+    }
+    .description{
+        font-size: 14px;
+        width: 90%;
+        color: rgb(44, 44, 44);
+    }
+}
